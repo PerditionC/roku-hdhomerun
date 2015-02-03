@@ -14,7 +14,10 @@ Function displayVideo(channel As string, args As Dynamic)
     videoclip = CreateObject("roAssociativeArray")
     videoclip.StreamBitrates = [0]   'adaptive bitrate
     videoclip.StreamUrls = [url]
-    videoclip.StreamQualities = ["HD"]
+
+    so = getHDorSD() 
+    videoclip.streamqualities=[so] 'because SD displays will not play HDTV streams, see http://sdkdocs.roku.com/display/sdkdoc/roVideoScreen
+
     videoclip.StreamFormat = "hls"
     videoclip.Title = channel
     video.SetContent(videoclip)
