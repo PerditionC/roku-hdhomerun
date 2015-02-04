@@ -36,8 +36,7 @@ End Function
 function tuneChannel(channelNum As string)
     'in url we attach a query to wallop api's Tune POST method to have ply grab 
     'optimal HDHomerun video transcode
-    url = getBaseWallopUrl() + "/channels/" + channelNum + "/tune"' + "?" + getHDorSD()
-
+    url = getBaseWallopUrl() + "/channels/" + channelNum + "/tune?quality=" + getHDorSD()
     request = CreateObject("roUrlTransfer")
     request.SetUrl(url)
     request.PostFromString("")

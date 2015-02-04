@@ -16,7 +16,7 @@ Function displayVideo(channel As string, args As Dynamic)
     videoclip.StreamUrls = [url]
 
     so = getHDorSD() 
-    videoclip.streamqualities=[so] 'because SD displays will not play HDTV streams, see http://sdkdocs.roku.com/display/sdkdoc/roVideoScreen
+    videoclip.StreamQualities=[so] 'because SD displays will not play HDTV streams, see http://sdkdocs.roku.com/display/sdkdoc/roVideoScreen
 
     videoclip.StreamFormat = "hls"
     videoclip.Title = channel
