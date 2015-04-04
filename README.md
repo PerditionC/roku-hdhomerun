@@ -1,5 +1,3 @@
-*Check out the most recent updates on the [wiki](https://github.com/computmaxer/roku-hdhomerun/wiki/News-and-Updates).*
-
 Roku-HDHomerun
 ==============
 
@@ -11,6 +9,9 @@ The HDHomerun PRIME (hdhr3-cc) and PLUS (hdtc-2us) support streaming over HTTP. 
 
 ![Screenshot](http://i.imgur.com/GJUiye0.png)
 
+##Authors##
+ * Based on roku-hdhomerun from [computmaxer/roku-hdhomerun](https://github.com/computmaxer/roku-hdhomerun).
+ * Forked from [pompous-stranger/roku-hdhomerun](https://github.com/pompous-stranger/roku-hdhomerun).
 
 ##What You Need##
  * HDHomerun PRIME (hdhr3-cc) or HDHomerun PLUS (hdtc-2us)
@@ -27,8 +28,7 @@ The HDHomerun PRIME (hdhr3-cc) and PLUS (hdtc-2us) support streaming over HTTP. 
 Wallop has the ability to serve up channel logos for each of your channels.  I have included some logos sized appropriately for this Roku app in the `channel_logos` directory.  Copy these logos to your Wallop install and add each channel to your Wallop config, as described [here](https://github.com/maddox/wallop#network-logos). Please contribute more logos if you create them for your setup!  The proper image size is 210x270.
 
 ##Future Plans##
-Currently waiting for Roku to support .ts containers (live streams).
-Follow the updates on the [wiki](https://github.com/computmaxer/roku-hdhomerun/wiki/News-and-Updates).
+A channel guide.
 
 ##FAQ##
 
@@ -37,7 +37,7 @@ No. Sorry. :(  The Dual (hdhr3-us) does not have the ability to stream over HTTP
 
 
 ###Can you make a Plex channel?###
-I am going to take a look and see if I can use the same techniques to make this work on a Plex channel as well.  Ideally we would use Plex's transcoder instead of Wallop, but Plex's transcoder currently does not support live streams of any kind.
+No, see (https://forums.plex.tv/index.php/topic/101755-hdhomerun-viewer/).
 
 ###Does it have a channel guide/schedule?###
-No. This is something I am looking into.  If you know of any free/open APIs where I can get that information for, say, a zip-code, please let me know!
+No. But this is what I hope to implement eventually, hence the fork.
